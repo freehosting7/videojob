@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type='text/javascript' src='//pl26220906.profitableratecpm.com/50/ba/25/50ba25effc3f0a5118eeeb73c2d00848.js'></script>
+  <meta charset="UTF-8">
+  <title>Video Job</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .header {
+      padding: 15px;
+      background-color: white;
+    }
+    .breadcrumbs {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    h1 {
+      color: #333;
+    }
+    .bonus-btn {
+      background-color: #ff5a1f;
+      color: white;
+      border: none;
+      padding: 12px;
+      margin: 10px 0;
+      width: 90%;
+      max-width: 600px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .refresh-btn {
+      float: right;
+      margin: 10px 20px;
+      padding: 6px 10px;
+      border: 1px solid orange;
+      border-radius: 4px;
+      color: orange;
+      background: none;
+      cursor: pointer;
+    }
+    .video-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .video-card {
+      background-color: white;
+      border-radius: 6px;
+      width: 200px;
+      margin: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .video-card:hover {
+      transform: scale(1.02);
+    }
+    .video-card img {
+      width: 100%;
+      height: 120px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    .video-card .caption {
+      background-color: #ff5a1f;
+      color: white;
+      padding: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="breadcrumbs">Dashboard / Creator</div>
+    <h1>Watch videos with friends and earn $500.00 (≈৳ 60,758)</h1>
+    <p>No investment required, earn $0.60 (≈৳ 73) per minute by watching videos</p>
+    <p>Sign up now to get $100.00 (≈৳ 1,215) in rewards!<br>Referral bonuses and more extra bonus are waiting for you!</p>
+
+    <button class="bonus-btn" onclick="window.location.href='https://sawutser.top/4/9225757'">🎁 Extra bonus 1</button><br>
+    <button class="bonus-btn" onclick="window.location.href='https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c'">🎁 Extra bonus 2</button><br>
+    <button class="bonus-btn" onclick="window.location.href='https://sawutser.top/4/9225757'">🎁 Extra bonus 3</button>
+  </div>
+
+  <button class="refresh-btn" onclick="refreshVideos()">Refresh Video</button>
+
+  <div class="video-grid" id="videoGrid">
+    <!-- Static 12 buttons -->
+    <!-- These will update content, not remove/re-add -->
+  </div>
+
+  <script>
+    // All video data
+    const allVideos = [
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3RII-saY136U4xQEbeS9tmEQpDdYLGedyv_AfIjHftVWNKv4EBTtL5I1zzt3xrvXbcV8IPdGOxPAw8mAr-bfzGYkE2jiIDotBWq3rq-5v-MdXJEpzOdv3RQ5nN-XRcnaz-MBKWpaxWVUtuaFdH_7oWSAThSGrcZ7P2iNsHYbenLIm__Y6GE1Vb1x32qAj/s16000/68070bba1bc8d-fbutube-maxresdefault.jpg', caption: 'Earn $25.00 (≈৳ 3,000)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEnGdfZENVuyP2wF609wst45PKSzqszFGaKf5tjViJGCFmb2eR55V09XBw688XjVmKEC3dIjFodG2p1HB3PzwwhbU0nRvVKW7m2w4tOGXPZ24sHqYwOtDYahXcZeTZX34x3mXJKv1xo68ng82ajV42Muov-CFayGrAIrgoSK301TV20Xu8neV8XoUinkAF/s320/68070c4864957-fbutube-maxresdefault%20(1).jpg', caption: 'Earn $22.00 (≈৳ 2,500)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj4Y4RV4PtNBkaNYgz2VU71GDV7w5P9dpymcwvdAozfLZAyfWUt4EpelyhAw6_lPxxnLmlmiDjq7ZR9NzxpzhHKTGYKuQUB1-YHDMzKFtW1njBHegAARpkOOrgca_Fj16RLtWM4wQXJ8tKAN_4M8Ah7lxt2KvEQ6DeN0IaYFf_RiNykjVcHZvV9ziHs-a2/s320/68070d478aca4-fbutube-sddefault.jpg', caption: 'Earn $28.00 (≈৳ 3,300)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvBsd4fxK6oWd4Ek4cNI2K1n1VPoy2DBuNiBvE4TGAZ9t9SOgfTjPtCcenghYu8rXzA1WQb7DWZHiCHZRd12qcCzTUuKxODy4G9F9XMkEEdTgj6oMtdb9TsdRZsRWAf68uLt7wxzkEW-3FnhzhRIqxcZEPNbCHK5pqCjnpmIFY_wGji8aUpmtUITuntKx9/s320/68070db6297a8-fbutube-maxresdefault%20(2).jpg', caption: 'Earn $19.00 (≈৳ 2,000)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigIvFwo_hRBCpvWmVtV3-msUS6S3XL1WjLrQIwyrmb_tdQ9HQbqyR5fx5rRWyQSn1lK7ixKkbfstf4KR0TKwmdwsrN7HzYyTWevQlJZeUdb75fuo5xki5tDXwLCcISRqPOudkyQOeB3rHsRURMVHd4LLEofgZS5xaYAzVuiR0X6SBJnVZPCo6CqAcuErdu/s320/68070e10a9706-fbutube-xfOT2elC2Ok-HD.jpg', caption: 'Earn $31.00 (≈৳ 3,600)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgXTE0MV_N8We8mqEj22WWJGpMOShyphenhyphen0oPPyDD02RvdNgbMBaEWGRO7z0o5RRT63bzxXCOaqlkT07bxto03eq9PcW9zHQ8KY4ODi5WyJV2RtEpXKcL7PMRw4vDZ_c9MCaYgHfEc78_NniZ8ng3AlDUWSst8maXLiZmbyydf6X3QIYo6gRybSaynKQPdk-xTR/s320/68070e53a4b5d-fbutube-PvF8o_0Jqxk-HD.jpg', caption: 'Earn $27.00 (≈৳ 3,200)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUeYmlO5LcU2C7_bYoAluCKBIhnQBMDNvnrsor5VDDGSWmn6_NL36u0y-beRqPQO9mp58c98wnUHVaaD3bTzSQqcBO-wgR_lYMY17iICIYQ0ToS_0vT6nTgTjDujaur8W-IhQSq7MAD3eXvfRthMtS8vf9VykNaV9zpvunExlIRWYH3F5kL1JhaQgo6MuK/s320/68070ea0effa7-fbutube-4xGtBrPhxEc-HD.jpg', caption: 'Earn $30.00 (≈৳ 3,400)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiskw97S7EDz5QaAY70OYnKcD6tCMvv1DuG1TU9wcMpwNCuGwu51iOy7iZ5XoabppIcc0jzEwrUuCJctr_XTgglFLkKSZ0cXlaVXj-S46GrR11FcBxklft7Fs7C6KsA1zH0PMUHfxWa3BGlovUXgH4IZY2xmvgeyE_umN5dXEFxjwr1U_yoaiySF5axHeeC/s320/68070ef18202e-fbutube-ouhYHvyQjAk-HD.jpg', caption: 'Earn $21.00 (≈৳ 2,400)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDlEHAESr6TpplRP6lAQyN-6BQF8-kzqdu69WWBh2QVbpJSfs7y3UgvD2PVwW_6Wg09Ndrvba2ug2p0ciNJzBVFsf2diimc_uDonnw11xOksagzwYT0yUYvG71UXUUEuT9q84QdWYzOtk2Xq9FWlssXyOrDuZQPAQj2KGzsqT7UbVDXu7qfuML8S4HWdFQ/s320/68070f33bbdae-fbutube-VRbA_fVHtvo-HD.jpg', caption: 'Earn $24.00 (≈৳ 2,800)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWHBMvu3HxVbF7smBxnf6K56uMgFA7qNB5xlt2SRdf3sdi48XzIluBnETVIFclvF8WDXMLy3Fjp4J5vIqaEhV9Z98P9DH3xRVwPl-9TE_1dH1An5DyKrZdJB0XM4uEFrp1nXWr0YZaFSfVHAO_k-rd80GaTnrmonViZcfOTvr-FeSA3UgAq2Ree8FZA7Sx/s320/68070f9492bdf-fbutube-JYQX01c42G8-SD%20(1).jpg', caption: 'Earn $26.00 (≈৳ 3,100)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwjnB2AFSl4Y4yQsYFOnhKi2WjdCXwGXgF7WriXpFAGtReyZESRPVdYItOU487ds9i0KwQwfLa0WZw-a4O3LfIZD_OvuCrFScSGX26z7dZ2q8jNna_8lmO7DYsRX5FzGughoUWPDDAtIF92Ok2L5Tli6xG_ChK5w91j_H_zVzTCrhY4R80H2S5aIc-NYx8/s320/68070fdb3cc52-fbutube-LI8yDfWhk0k-HD.jpg', caption: 'Earn $20.00 (≈৳ 2,300)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhvaOy2olNYYtJXGNOdbQ1-ImkqcECFl2qkktAEFWIxxtJrZwZCQ4JwdEB6Jy0T-QmzDNQKnBAdetahEnDw35N7q1gvfdYZhRlAGjR0BDcE0dVsEFkzAxbd0ppVoWjGS3xvNRpv0amdY8p3AyzcGSL4QPEKyrrT5W0xCghyphenhyphen2q2Wop3ygsuUHMc4iaGIXsPF/s320/6807101b76f92-fbutube-y0NUP4SR-Bw-HD.jpg', caption: 'Earn $29.00 (≈৳ 3,500)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiC8vj8HCN6yDrtUwfeXONStP0X5f5TOHAmcgljp_4HjlmHTNJ_jT1H5brYFyLRcto6fmd7tFBe2RHDtvHh609agOQ7VXzvwi1LiDrVEMcDz0FOPMV8Q5yDCSEJv67a5dvKqLNebalg-M6BtaV65tf-Y27FBt_X089_JZZiOdwrNUP3j9W7sU9dTONkjAoG/s320/680710670c104-fbutube-thW2lMSg4ng-HD.jpg', caption: 'Earn $23.00 (≈৳ 2,600)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+      { img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJxSXa1YPUr3C_JXY2wGErir1RftX_shYEfiufMLEULBAmLXGmGwk7zTa1HqbGDqo5dyntxyORNAEJDCKQdw6rxZ3wDbupksW32AweaxoMI_7bqZoMgiV1_2rTwSZtPEwEOVTb7rTNMIJr8yGQAnp4avcz3f93eqEhvTj8wCkGvlGKCaF4kNGXnjz8n5oH/s320/680710c56fe4e-fbutube-5vZjrxE8Wlc-HD.jpg', caption: 'Earn $32.00 (≈৳ 3,700)', link1: 'https://sawutser.top/4/9225757', link2: 'https://www.profitableratecpm.com/hc2cbvqis?key=7cd1d2adc598f586f0774e8827fa1c5c' },
+    ];
+
+    function shuffle(array) {
+      const copy = [...array];
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy.slice(0, 12);
+    }
+
+    let buttonRefs = [];
+
+    function refreshVideos() {
+      const shuffled = shuffle(allVideos);
+      buttonRefs.forEach((card, i) => {
+        const video = shuffled[i];
+        const img = card.querySelector('img');
+        const caption = card.querySelector('.caption');
+        img.src = video.img;
+        caption.textContent = video.caption;
+        card.onclick = () => {
+          window.location.href = video.link1;
+          setTimeout(() => {
+            window.location.href = video.link2;
+          }, 2000);
+        };
+      });
+    }
+
+    function createInitialButtons() {
+      const grid = document.getElementById('videoGrid');
+      for (let i = 0; i < 12; i++) {
+        const card = document.createElement('div');
+        card.className = 'video-card';
+        card.innerHTML = `
+          <img src="" alt="Video">
+          <div class="caption">Loading...</div>
+        `;
+        grid.appendChild(card);
+        buttonRefs.push(card);
+      }
+      refreshVideos();
+    }
+
+    // Initial setup
+    createInitialButtons();
+  </script>
+
+</body>
+</html>
